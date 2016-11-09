@@ -16,6 +16,18 @@
         <img src="{{imgUrl}}">
         <p>{{body}}</p>
     </script>
+
+   <script id="repo-template" type="text/x-handlebars-template">
+    <li>
+    <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+    <p>Description: {{description}}</p>
+    <p>Primary Language: {{language}}</p>
+    <p>Created: {{created_at}}</p>
+    <p>Last updated: {{updated_at}}</p>
+    {{#if watchers_count}}
+    <p>{{watchers_count}} watching this repo</p>
+    {{/if}}
+      </script>
 </head>
 
 <body>
@@ -49,12 +61,17 @@
         &copy; 2016 HeijnenGroup
     </footer>
     <script src="vendor/scripts/page.js"></script>
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="scripts/models/githubToken.js"></script>
+        <script src="scripts/app.js"></script>
+    <script src="scripts/models/articles.js"></script>
+    <!-- <script src="/scripts/views/newArticle.js"></script> -->
+    <script src="scripts/models/repo.js"></script>
     <script src="scripts/controller/aboutController.js"></script>
     <script src="scripts/controller/articleController.js"></script>
     <script src="scripts/controller/routes.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src="scripts/app.js"></script>
+     <!-- <script src="/scripts/views/repoView.js"></script> -->
     <script src="scripts/articleView.js"></script>
 
 </body>
