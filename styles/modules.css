@@ -1,0 +1,72 @@
+article p {
+  display: inline-block;
+  background-image: black;
+}
+.heading-group-h1 {
+  float: left;
+  padding: 0 0 .2em 1em;
+}
+.main-nav {
+  padding: 0.1em;
+}
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+.main-nav:hover ul {
+  display: block;
+}
+.main-nav li {
+  margin-right: .4em;
+  font-size: 2.0em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
+}
+
+.portfolio-view{
+  display:block;
+}
+article.projects {
+  display: inline;
+  margin: 2%;
+  text-align: center;
+}
+
+@media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+  .main-nav {
+    display: inline-block;
+    position:fixed;
+    width:100%
+
+  }
+  .main-nav ul {
+    display: block;
+  }
+
+  .main-nav ul li {
+
+    height: 100%;
+    display: inline;
+    border-bottom: none;
+  }
+
+  .main-nav ul li:hover a {
+    color: #29506D;
+  }
+  article.projects{
+    display: inline-block;
+    width: 30%;
+    margin: 2% 1%;
+  }
+
+  @media screen and (min-width:855px) {
+  article.project-view {
+    display: inline-block;
+    width: 10%;
+    margin: 2% 1%;
+  }

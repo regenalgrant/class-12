@@ -1,0 +1,47 @@
+body {
+clear: both;
+line-height:1.5;
+background-image:url(/image/3.png);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+overflow-x: hidden;
+}
+.element{
+  shape-outside: url(/image/8.png);
+  shape-image-threshold: 50%;
+  float: left;
+
+}
+.portfolio-view{
+
+.main-nav{
+color:tomato;
+}
+.index-title{
+font-size:2em;
+color: black;
+}
+.title-portfolio-item{
+  font-size:2em;
+  color: black;
+}
+.body-portfolio{
+  font-size:2em;
+  color: black;
+}
+.read-on{
+  font-size:2em;
+  color: black;
+}
+#data/Article.json{
+font-size:2em;
+color: black;
+}
+#projects{
+    margin-top:40%;
+    font-size:1.5em;
+    color: tomato;
+}
