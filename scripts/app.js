@@ -37,8 +37,9 @@
     });
   };
   Project.getJson = function() {
-
+console.log('HELLO MOTO')
     $.getJSON ('data/Articles.json', function (data) {
+      console.log(data);
       Project.load(data);
       projectV.render();
     });

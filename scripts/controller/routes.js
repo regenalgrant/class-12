@@ -1,4 +1,4 @@
 
-page('/', aboutController.reveal);
-page('/projects', articleController.reveal);
+page('/about', aboutController.reveal);
+page('/', articleController.reveal);
 page();

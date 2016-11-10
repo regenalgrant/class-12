@@ -3,8 +3,8 @@
 
   articleController.reveal = function() {
     console.log('show projects');
-    $('#projects').fadeIn();
     $('#aboutme').hide();
+    $('#projects').fadeIn();
   };
 
   module.articleController = articleController;
