@@ -6,7 +6,7 @@ background-repeat: no-repeat;
 background-position: center center;
 background-attachment: fixed;
 background-size: cover;
-background-color: black;
+background-color: white;
 overflow-x: hidden;
 }
 .element{
@@ -36,7 +36,7 @@ color: black;
   font-size:2em;
   color: black;
 }
-#data/Article.json{
+#data/Project.json{
 font-size:2em;
 color: black;
 }
