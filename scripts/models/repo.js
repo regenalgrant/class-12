@@ -4,19 +4,15 @@
   repos.allRepos = [];
 
   repos.requestRepos = function(callback) {
-
-    $.ajax({
-      url: 'https://api.github.com/users/regenalgrant/repos',
-      type:'GET',
-      headers: {Authorization: 'token ' + githubToken},
-      success: function(data) {
-        console.log(data);
-        repos.allRepos = data;
-        callback();
-      }
-    });
+    $.when(
+        $.get('/github/users/regenalgrant/repos', function(data){
+          repos.allRepos = data;
+        }),
+        $.get('/github/users/regenalgrant/followers', function(data){
+          repos.followers = data;
+        })
+       ).done(callback);
   };
-
   repos.withTheAttribute = function(myAttr) {
     return repos.allRepos.filter(function(aRepo) {
       return aRepo[myAttr];
