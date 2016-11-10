@@ -8,7 +8,7 @@
     $.ajax({
       url: 'https://api.github.com/users/regenalgrant/repos',
       type:'GET',
-      headers: {'Authorization': 'token ' + '46ae19e42d0882ce03ca78384e5bf66f7d5f0bd7'},
+      headers: {Authorization: 'token ' + githubToken},
       success: function(data) {
         console.log(data);
         repos.allRepos = data;

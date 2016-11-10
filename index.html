@@ -36,6 +36,7 @@
 <i class="fa fa-bars" aria-hidden="true"></i>
 <ul>
 <li class="tab"data-content="projects"><a href="/"><i class="fa fa-home" aria-hidden="true"> Home</i></a></li>
+<li class="tab" data-content="repos"><a href="/repos"><i class="fa fa-user-circle-o" aria-hidden="true"> repos</i></a></li>
 <li class="tab" data-content="aboutme"><a href="/about"><i class="fa fa-user-circle-o" aria-hidden="true"> About</i></a></li>
 <li class="tab" data-content="linkedn"><i class="fa fa-linkedin-square" aria-hidden="true">Linkedn</i></li>
 <li class="tab" data-content="github"><i class="fa fa-github" aria-hidden="true">Github</i></li>
@@ -44,32 +45,43 @@
     </header>
     <main>
       <section id="projects" class="tab-content"></section>
+      <section id="repos" class="tab-content">
+        random shit
+
+      </section>
         <section id="aboutme" class="tab-content">
-            <h2 class="index-title">Regenal Grant Portfolio </h2>
-            <article class="portfolio-view" data-category="category">
-                <h1 id="title-portfolio-item">Personal Bio</h1>
-                <a href="" id="data/Project.json"><image class="element" src="image/8.jpg" alt="" id="2"></a>
-                <p class="body-portfolio" style= "">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
-                    est. Mauris placerat eleifend leo. </p>
-                  </img>
-                <br>
-                <a href="#" class="read-on">Show Less</a>
+          <h2 class="index-title">Regenal Grant Portfolio </h2>
+          <article class="portfolio-view" data-category="category">
+            <h1 id="title-portfolio-item">Personal Bio</h1>
+            <a href="" id="data/Project.json"><image class="element" src="image/8.jpg" alt="" id="2"></a>
+              <p class="body-portfolio" style= "">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                est. Mauris placerat eleifend leo. </p>
+              </img>
+              <br>
+              <a href="#" class="read-on">Show Less</a>
             </article>
-        </section>
+          </section>
     </main>
     <footer>
         &copy; 2016 HeijnenGroup
     </footer>
+    <!-- vendor -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src="vendor/scripts/page.js"></script>
-    <script src="scripts/models/githubToken.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-        <script src="scripts/app.js"></script>
-  <script src="scripts/models/articleView.js"></script>
+    <script src="vendor/scripts/page.js"></script>
+    <!-- Models -->
+    <script src="scripts/models/app.js"></script>
     <script src="scripts/models/repo.js"></script>
+    <script src="scripts/models/githubToken.js"></script>
+    <!-- views -->
+  <script src="scripts/views/articleView.js"></script>
+    <script src="scripts/views/repoView.js"></script>
+    <!-- controllers -->
     <script src="scripts/controller/aboutController.js"></script>
     <script src="scripts/controller/articleController.js"></script>
+    <script src="scripts/controller/repoController.js"></script>
     <script src="scripts/controller/routes.js"></script>
+
 
 </body>
 
