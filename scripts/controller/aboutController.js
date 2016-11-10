@@ -4,6 +4,7 @@
   aboutController.reveal = function() {
     console.log('show about me');
     $('#projects').hide();
+        $('#repos').hide();
     $('#aboutme').fadeIn();
   };
 
