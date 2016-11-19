@@ -4,7 +4,7 @@
   articleController.reveal = function() {
     console.log('show projects');
     $('#aboutme').hide();
-      $('#repos').hide();
+    $('#repos').hide();
     $('#projects').fadeIn();
   };
 

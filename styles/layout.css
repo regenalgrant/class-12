@@ -11,6 +11,7 @@ overflow-x: hidden;
 }
 .element{
   shape-outside: url(/image/8.png);
+  border-radius: 50%;
   shape-image-threshold: 50%;
   float: left;
 
